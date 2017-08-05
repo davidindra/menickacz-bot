@@ -2,7 +2,5 @@
 
 vendor/
 
-composer.lock
-
 slack/secrets.json
 slack/cache.db
