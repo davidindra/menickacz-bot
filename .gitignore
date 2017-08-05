@@ -1,6 +1,7 @@
-.idea/
+/.idea/
 
-vendor/
+/vendor/*
+!/vendor/.htaccess
 
-slack/secrets.json
-slack/cache.db
+/slack/secrets.json
+/slack/cache.db
