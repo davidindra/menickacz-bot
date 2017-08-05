@@ -16,13 +16,19 @@ header("Connection: close");
 ob_end_flush();
 flush();
 
-$slack = new SlackProcessor(
-    $_GET,
-    $_POST,
-    __DIR__ . '/secrets.json',
-    __DIR__ . '/cache.db'
-);
+try {
 
-$slack->process();
+    $slack = new SlackProcessor(
+        $_GET,
+        $_POST,
+        __DIR__ . '/secrets.json',
+        __DIR__ . '/cache.db'
+    );
+
+    $slack->process();
+
+}catch(\Exception $e){
+    file_put_contents(__DIR__ . '/error.log', $e->__toString(), FILE_APPEND);
+}
 
 die();
