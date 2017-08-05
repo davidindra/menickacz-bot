@@ -1,0 +1,16 @@
+{
+    "name": "davidindra/menickacz-bot",
+    "description": "Slack/Messenger bot for Menicka.cz",
+    "type": "project",
+    "license": "CC-BY-NC-SA-4.0",
+    "authors": [
+        {
+            "name": "David Indra",
+            "email": "mail@davidindra.cz"
+        }
+    ],
+    "require": {
+        "davidindra/menickacz-api": "^1.1",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
