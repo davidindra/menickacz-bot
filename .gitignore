@@ -3,5 +3,7 @@
 /vendor/*
 !/vendor/.htaccess
 
-/slack/secrets.json
-/slack/cache.db
+/apiai/cache.db
+/apiai/token.txt
+/apiai/error.log
+/apiai/info.log
