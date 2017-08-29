@@ -47,8 +47,8 @@ class Endpoint
     }
 
     private function validateToken(){
-        if($this->get['token'] != $this->token)
-            throw new EndpointException('Verification tokens doesn\'t match (received ' . $this->post['token'] . ')!');
+        if(trim($this->get['token']) != trim($this->token))
+            throw new EndpointException('Verification tokens doesn\'t match (received ' . $this->get['token'] . ')!');
 
         return true;
     }
